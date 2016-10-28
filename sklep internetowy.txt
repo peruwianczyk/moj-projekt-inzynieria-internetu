@@ -1,0 +1,36 @@
+
+1  utworzenie planu(harmonogram),repozytorium github, instalacja 
+
+*** Widok/szablon strony
+	
+2 szablon g³ównej strony
+3 Przejœcia miêdzy zak³adkami
+4 Dynamiczne menu
+
+*** Autoryzacja strony
+
+5 logowanie
+6 wylogowanie
+7 rejestracja
+8 resetowanie has³a/ zmiana danych
+9 panel administratora
+10 panel u¿ytkownika
+	
+*** Baza danych klientów
+
+11pod³¹czenie bazy danych
+12 utworzenie bazy danych
+13 Dodawanie zamówieñ do bazy danych
+14 Przegl¹danie bazy danych
+15 Administracja baz¹ danych
+
+
+*** Administracja
+16 edycja uzytkowników
+17 tworzenie/edycja grafiki
+18 przypomnienie o kupnie(wiadomoœæ mailowa)
+
+*** Zabezpieczenia
+
+ 19 szyfrowanie has³a
+
