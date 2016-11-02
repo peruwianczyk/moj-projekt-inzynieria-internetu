@@ -33,4 +33,4 @@
 *** Zabezpieczenia
 
  19 szyfrowanie has³a
-
+****************
