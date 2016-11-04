@@ -1,5 +1,18 @@
 <?php
 
+$menu = array(
+'index.php'  => 'Strona główna' ,
+'o_nas.php'  => 'O firmie' ,
+'produkty.php'  => 'Dostępne produkty' 
+);
+
+
+$p = strrpos($_SERVER['PHP_SHELF'],'/');
+$aktualna_strona = substr($_SERVER['PHP_SHELF'],$p+1);
+$tytul_strony = $menu[$aktualna_strona];
+?>
+<?php
+
 	session_start();
 	
 	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
@@ -22,6 +35,9 @@
 	
 	Maciej Ozdoba sklep internetowy<br /><br />
 	
+	<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a>
+	<br /><br />
+	
 	<form action="zaloguj.php" method="post">
 	
 		Login: <br /> <input type="text" name="login" /> <br />
@@ -34,5 +50,18 @@
 	if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
 ?>
 
+<h1>Menu</h1>
+<?php
+foreach ($menu as $klucz => $wartosc){
+	 if($klucz == $aktualna_strona)
+	echo "<p>" . $wartosc . "</p>";
+else 
+	echo "<p><a href=\" $klucz \">" . $wartosc . "</a></p>";
+}
+?>
+
+
+
+<a href='zmiana_pass.php'>Chcesz zmienić hasło? kliknij tutaj</a>
 </body>
 </html>
